@@ -30,4 +30,14 @@ public class StringCalculatorTest {
     public void twoNumberStringCheck(){
         assertEquals(5, stringCalculator.Add("2,3"));
     }
+
+    @Test
+    public void anyNumberStringCheck(){
+        assertEquals(7, stringCalculator.Add("1,2,3,1"));
+    }
+
+    @Test
+    public void anyNumberStringCheck2(){
+        assertEquals(12, stringCalculator.Add("4,2,3,1,2"));
+    }
 }
