@@ -25,4 +25,9 @@ public class StringCalculatorTest {
     public void oneNumberStringCheck(){
         assertEquals(2, stringCalculator.Add("2"));
     }
+
+    @Test
+    public void twoNumberStringCheck(){
+        assertEquals(5, stringCalculator.Add("2,3"));
+    }
 }
