@@ -20,4 +20,9 @@ public class StringCalculatorTest {
     public void emptyStringCheck(){
         assertEquals(0, stringCalculator.Add(""));
     }
+
+    @Test
+    public void oneNumberStringCheck(){
+        assertEquals(2, stringCalculator.Add("2"));
+    }
 }

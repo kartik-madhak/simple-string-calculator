@@ -3,8 +3,12 @@ public class StringCalculator {
         System.out.println("StringCalculator Object Created!");
     }
 
-    // Writing a function that 'barely qualifies' the test case
-    int Add(String numbers){
-        return 0;  // It should return 0 for empty strings
+    // Refactoring the function to adapt to the failing test case
+    int Add(String numbers) {
+        if (numbers.length() == 0) {
+            return 0;  // It should return 0 for empty strings
+        } else {
+            return Integer.parseInt(numbers); // Should return the number itself when only one number
+        }
     }
 }
