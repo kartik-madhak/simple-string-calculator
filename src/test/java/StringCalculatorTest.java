@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class StringCalculatorTest {
     StringCalculator stringCalculator;
 
@@ -12,5 +14,10 @@ public class StringCalculatorTest {
     @Test
     public void empty(){
 
+    }
+
+    @Test
+    public void emptyStringCheck(){
+        assertEquals(0, stringCalculator.Add(""));
     }
 }
