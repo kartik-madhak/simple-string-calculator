@@ -3,7 +3,7 @@ public class StringCalculator {
         System.out.println("StringCalculator Object Created!");
     }
 
-    // The method logic just became a little complicated as tests began to increase
+    // As a bonus, now our method can also handle spaces along with newlines...
     int Add(String numbers) {
         if (numbers.length() == 0)
             return 0;
@@ -11,7 +11,7 @@ public class StringCalculator {
         String[] number = numbers.split(",");
         int sum = 0;
         for (String num : number) {
-            sum += Integer.parseInt(num);
+            sum += Integer.parseInt(num.trim()); // Note: used trim here
         }
         return sum;
     }

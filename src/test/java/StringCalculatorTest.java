@@ -40,4 +40,14 @@ public class StringCalculatorTest {
     public void anyNumberStringCheck2(){
         assertEquals(12, stringCalculator.Add("4,2,3,1,2"));
     }
+
+    @Test
+    public void newLineCheck(){
+        assertEquals(12, stringCalculator.Add("4\n,2,3\n,1,2"));
+    }
+
+    @Test
+    public void newLineCheck2(){
+        assertEquals(15, stringCalculator.Add("4\n,5\n,3\n,1\n,2\n"));
+    }
 }
