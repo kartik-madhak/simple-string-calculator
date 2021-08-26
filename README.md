@@ -17,11 +17,11 @@ Commits explanation: -
 
 4. ## <u>[Added object creation test case 🎇](https://github.com/kartik-madhak/simple-string-calculator/commit/7a46fb303568157650e3a1f5ea0cfdf2c605327f)</u>
 
-   This commit created ```SimpleCalculator``` class and tested its object creation (by calling constructor before each testcase).
+   This commit created ```StringCalculator``` class and tested its object creation (by calling constructor before each testcase).
 
 5. ## <u>[Added test case for checking empty string 🧵](https://github.com/kartik-madhak/simple-string-calculator/commit/07d439f12baf6314c3f3cc36fe9fdf45a633840a)</u>
 
-   This commit adds a testcase that verifies that ```SimpleCalculator``` class supports an empty string as an argument. We do not write any logic for ```SimpleCalculator``` beyond what satisfies this testcase.
+   This commit adds a testcase that verifies that ```StringCalculator``` class supports an empty string as an argument. We do not write any logic for ```SimpleCalculator``` beyond what satisfies this testcase.
 
 6. ## <u>[Added test case for checking one number in the string 1️⃣](https://github.com/kartik-madhak/simple-string-calculator/commit/13f44d247011bdf0f9eef311d7952fa4bcef3610)</u>
 
