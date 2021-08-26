@@ -71,4 +71,34 @@ public class StringCalculatorTest {
     public void negativeCheck() {
         assertThrows(NegativeNumberException.class, () -> stringCalculator.Add("//;\n-1;1;-2"));
     }
+
+    @Test
+    public void biggerThan1000Check() throws Exception {
+        assertEquals(11, stringCalculator.Add("//;;\n1001\n;;5\n;;3\n;;1\n;;2\n"));
+    }
+
+    @Test
+    public void multipleLengthDelimiterCheck() throws Exception {
+        assertEquals(11, stringCalculator.Add("//;;\n1001\n;;5\n;;3\n;;1\n;;2\n"));
+    }
+
+    @Test
+    public void multipleLengthDelimiterCheck2() throws Exception {
+        assertEquals(11, stringCalculator.Add("//[;;]\n1001\n;;5\n;;3\n;;1\n;;2\n"));
+    }
+
+    @Test
+    public void multipleLengthDelimiterCheck3() throws Exception {
+        assertEquals(11, stringCalculator.Add("//[ ]\n5 3 1 2"));
+    }
+
+    @Test
+    public void multipleDelimiterCheck() throws Exception {
+        assertEquals(6, stringCalculator.Add("//[*][%]\n1*2%3"));
+    }
+
+    @Test
+    public void multipleDelimiterCheck2() throws Exception {
+        assertEquals(10, stringCalculator.Add("//[*][%][ ]\n1*2%3 4"));
+    }
 }
