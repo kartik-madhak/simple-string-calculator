@@ -3,7 +3,7 @@ Problem statement here - [tdd-kata](https://osherove.com/tdd-kata-1)
 
 ### Project Explaination: -
 
-**Primary Language:** JAVA
+**Primary Language:** Java
 
 **Build Tool Used:** Gradle
 
