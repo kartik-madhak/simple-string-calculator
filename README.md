@@ -1,5 +1,5 @@
 # simple-string-calculator
-Part of Incubyte Assessment 😃
+Problem statement here - [tdd-kata](https://osherove.com/tdd-kata-1)
 
 ### Project Explaination: -
 
