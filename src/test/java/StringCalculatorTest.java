@@ -50,4 +50,19 @@ public class StringCalculatorTest {
     public void newLineCheck2(){
         assertEquals(15, stringCalculator.Add("4\n,5\n,3\n,1\n,2\n"));
     }
+
+    @Test
+    public void delimiterCheck(){
+        assertEquals(15, stringCalculator.Add("//+\n4+5+3+1+2"));
+    }
+
+    @Test
+    public void complexDelimiterCheck(){
+        assertEquals(15, stringCalculator.Add("//;\n4\n;5\n;3\n;1\n;2\n"));
+    }
+
+    @Test
+    public void complexDelimiterCheck2(){
+        assertEquals(15, stringCalculator.Add("//;;\n4\n;;5\n;;3\n;;1\n;;2\n"));
+    }
 }
