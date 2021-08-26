@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,8 +19,8 @@ public class StringCalculator {
         return str;
     }
 
-    // As a bonus, now our method can also handle spaces along with newlines...
-    int Add(String numbers) {
+    // This function can also handle negative numbers, but the assessment says we have to throw exception...
+    int Add(String numbers) throws Exception {
         if (numbers.length() == 0)
             return 0;
 
@@ -28,9 +29,18 @@ public class StringCalculator {
 
         String[] number = numbers.split(Pattern.quote(delimiter));
         int sum = 0;
+        ArrayList<String> negs = new ArrayList<>();
+        boolean throwException = false;
         for (String num : number) {
-            sum += Integer.parseInt(num.trim()); // Note: used trim here
+            int n = Integer.parseInt(num.trim());
+            if (n < 0) {
+                negs.add(num);
+                throwException = true;
+            }
+            sum += Integer.parseInt(num.trim());
         }
+        if (throwException)
+            throw new NegativeNumberException("negative numbers not allowed. Included in the string : ", negs);
         return sum;
     }
 }
