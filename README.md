@@ -31,7 +31,7 @@ Part of Incubyte Assessment 😃
 
 5. ## <u>[Added test case for checking empty string 🧵](https://github.com/kartik-madhak/simple-string-calculator/commit/07d439f12baf6314c3f3cc36fe9fdf45a633840a)</u>
 
-   This commit adds a testcase that verifies that ```StringCalculator``` class supports an empty string as an argument. We do not write any logic for ```SimpleCalculator``` beyond what satisfies this testcase.
+   This commit adds a testcase that verifies that ```StringCalculator``` class supports an empty string as an argument. We do not write any logic for ```StringCalculator``` beyond what satisfies this testcase.
 
 6. ## <u>[Added test case for checking one number in the string 1️⃣](https://github.com/kartik-madhak/simple-string-calculator/commit/13f44d247011bdf0f9eef311d7952fa4bcef3610)</u>
 
