@@ -1,7 +1,17 @@
 # simple-string-calculator
 Part of Incubyte Assessment 😃
 
-Commits explanation: -
+### Project Explaination: -
+
+**Primary Language:** JAVA
+
+**Build Tool Used:** Gradle
+
+**Dependencies:** junit 4.12 (later changed to 5.8)
+
+**IDE: ** IntelliJ IDEA
+
+### Commits explanation: -
 
 1. ## <u>[Init Empty Gradle Project🏭](https://github.com/kartik-madhak/simple-string-calculator/commit/8f93c35f65f1271c7c9006ede65cdd67d5a4f34c)</u>
 
