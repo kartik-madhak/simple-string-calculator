@@ -9,7 +9,7 @@ Part of Incubyte Assessment 😃
 
 **Dependencies:** junit 4.12 (later changed to 5.8)
 
-**IDE: ** IntelliJ IDEA
+**IDE:** IntelliJ IDEA
 
 ### Commits explanation: -
 
